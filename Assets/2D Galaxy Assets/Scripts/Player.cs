@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour {
+public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
+        //Debug.Log("Name: " + name);
+        transform.position = new Vector3(0, 0, 0);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update(){
+        
+    }
 }
