@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+    public bool canTripleShot = false;
+
     [SerializeField] //This allows for the variable to be private but still able to view in Unity Inspector
-    private GameObject laserPrefab;
+    private GameObject _laserPrefab;
+    [SerializeField]
+    private GameObject _tripleShotPrefab;
 
     [SerializeField]
     private float _speed = 8f;
@@ -72,9 +76,19 @@ public class Player : MonoBehaviour {
         if (Time.time > _canFire)
         {
             _canFire = Time.time + _fireRate;
-            Instantiate(laserPrefab, transform.position + new Vector3(0, 0.88f, 0), Quaternion.identity);
-            Debug.Log(_canFire);
+
+            if (canTripleShot)
+            {
+                Instantiate(_tripleShotPrefab, transform.position, Quaternion.identity);
+            }
+
+            else
+            {
+                Instantiate(_laserPrefab, transform.position + new Vector3(0, 0.88f, 0), Quaternion.identity);
+            }
+
         }
+
     }
 
 }
