@@ -380,7 +380,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.045832396, y: 0.09166578}
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 2092520656}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -546,7 +546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 581e06cb0c0a2467d8df17b8890e0927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canTripleShot: 1
+  canTripleShot: 0
   _laserPrefab: {fileID: 1320718152610330, guid: 3d57b964867824844bcff175ba3e5115,
     type: 2}
   _tripleShotPrefab: {fileID: 1947333203853644, guid: cd3251b312df24ff1b09d95d3dcaa6b4,
@@ -582,7 +582,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.039283752, y: 0.0392828}

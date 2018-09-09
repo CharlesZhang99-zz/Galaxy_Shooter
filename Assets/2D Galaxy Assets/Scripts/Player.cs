@@ -36,6 +36,12 @@ public class Player : MonoBehaviour {
         {
             Shoot();
         }
+        /*
+        if (_tripleShotPrefab.transform.position.y > 6)
+        {
+            Destroy(_tripleShotPrefab.gameObject);
+        }
+        */
     }
 
 
@@ -77,7 +83,7 @@ public class Player : MonoBehaviour {
         {
             _canFire = Time.time + _fireRate;
 
-            if (canTripleShot)
+            if (canTripleShot == true)
             {
                 Instantiate(_tripleShotPrefab, transform.position, Quaternion.identity);
             }
